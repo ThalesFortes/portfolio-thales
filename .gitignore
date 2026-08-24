@@ -28,7 +28,7 @@ next-env.d.ts
 # vercel
 .vercel
 
-# rascunhos de trabalho, fora de public/ — não fazem parte do site publicado
+# rascunhos de trabalho, fora de public/, não fazem parte do site publicado
 /celular/
 /print/
 /curriculo/

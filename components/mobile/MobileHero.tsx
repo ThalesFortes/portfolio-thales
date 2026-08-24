@@ -11,7 +11,7 @@ const FADE_DURATION = 1.2;
 /** Port of the mobile `HeroSlide` (`NameAndJobTitle.js` + `AboutMe.js`):
  * nome já visível bem translúcido desde o primeiro paint, escurece devagar
  * até opacidade total (sem deslize), e o título usa a mesma animação logo
- * depois que a dele termina — sequência estrita, não sobreposta. */
+ * depois que a dele termina, sequência estrita, não sobreposta. */
 export default function MobileHero() {
   const nameRef = useRef<HTMLHeadingElement | null>(null);
   const titleRef = useRef<HTMLParagraphElement | null>(null);

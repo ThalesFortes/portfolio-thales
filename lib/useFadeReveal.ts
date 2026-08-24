@@ -8,7 +8,7 @@ import { usePrefersReducedMotion } from "./reducedMotion";
  * Fade de opacidade puro (sem deslize/bloco branco): elemento já visível
  * desde o SSR bem translúcido (classe Tailwind `opacity-[...]` no
  * componente), e escurece até opacidade total depois de `delayMs`, ao
- * longo de `durationMs`. Usado pelo nome e pelo título do Hero — mesma
+ * longo de `durationMs`. Usado pelo nome e pelo título do Hero, mesma
  * animação nos dois, só o `delayMs` muda pra sequenciar um depois do outro.
  */
 export function useFadeReveal<T extends HTMLElement = HTMLElement>(delayMs: number, durationMs: number) {

@@ -24,7 +24,7 @@ export type Project = {
   status: ProjectStatus;
   description: string;
   links: ProjectLink[];
-  // Screenshots reais em /public/projects/<slug>/ — só os projetos que têm
+  // Screenshots reais em /public/projects/<slug>/: só os projetos que têm
   // print entram no painel visual (WorkSection); os demais vão para a seção
   // "Outros projetos" (texto, sem mídia).
   images?: string[];
@@ -70,7 +70,7 @@ export type SkillPairing = {
 // responsabilidade real do brief onde elas foram aplicadas (direita).
 // Lista enxuta de propósito (foco para vaga júnior-pleno): só o que deve
 // bater o olho primeiro. PHP/WordPress/Apache, TOTVS RM/T-SQL/PL-SQL,
-// Metabase/Snowflake, C/C++ e C#/.NET/Redis saíram daqui — continuam
+// Metabase/Snowflake, C/C++ e C#/.NET/Redis saíram daqui, mas continuam
 // documentados (com prova) nos bullets da seção Experiência.
 export const skillPairings: SkillPairing[] = [
   {
@@ -105,15 +105,15 @@ export const experience: ExperienceItem[] = [
   {
     role: "Desenvolvedor .NET / Back-end",
     company: "Projetar IA",
-    period: "jul/2026 — atual",
+    period: "jul/2026 até atual",
     bullets: [
-      "Backend em C#/.NET do DelvyID — identidade descentralizada e credenciais verificáveis para saúde, com PostgreSQL",
+      "Backend em C#/.NET do DelvyID, identidade descentralizada e credenciais verificáveis para saúde, com PostgreSQL",
     ],
   },
   {
     role: "Analista de Sistemas",
     company: "Centro Universitário de Barra Mansa (UBM)",
-    period: "abr/2026 — atual",
+    period: "abr/2026 até atual",
     bullets: [
       "Consultas SQL e automações de processo com n8n",
       "Relatórios e dashboards via TOTVS RM",
@@ -123,9 +123,9 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    role: "Analista de Testes (QA) — Residente",
+    role: "Analista de Testes (QA) - Residente",
     company: "WEG Mobile Robot (Santa Catarina)",
-    period: "abr/2025 — abr/2026",
+    period: "abr/2025 até abr/2026",
     bullets: [
       "Análise de software e bibliotecas em C para identificar problemas e oportunidades de melhoria antes da produção",
     ],
@@ -133,7 +133,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Suporte ao Usuário (N1/N2)",
     company: "SINDPASS",
-    period: "abr/2024 — out/2024",
+    period: "abr/2024 até out/2024",
     bullets: [
       "Suporte a clientes com foco em resolução rápida",
       "Criação de um chatbot para agilizar o atendimento",
@@ -143,7 +143,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Analista de Sistemas (Estagiário)",
     company: "Hospital Unimed Volta Redonda",
-    period: "fev/2022 — fev/2024",
+    period: "fev/2022 até fev/2024",
     bullets: [
       "Manutenção do sistema MV",
       "Consultas SQL para obtenção de dados para dashboards",

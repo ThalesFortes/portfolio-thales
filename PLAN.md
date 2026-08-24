@@ -1,4 +1,4 @@
-# PLAN.md — Portfólio Thales de Abreu Fortes da Silva
+# PLAN.md, Portfólio Thales de Abreu Fortes da Silva
 
 ## Objetivo
 Site portfólio pessoal em Next.js (App Router) + TypeScript + Tailwind CSS,
@@ -9,18 +9,18 @@ no layout single-page do projeto React clonado em
 Work/Projects, Contact).
 
 ## Agentes e sequência
-1. **dev-code** — gerar estrutura de arquivos Next.js App Router + implementar
+1. **dev-code**, gerar estrutura de arquivos Next.js App Router + implementar
    todo o site (Hero, About, Experience timeline, Education, Skills, Projects
    com status badges e links, Contact/Footer), SEO/OG metadata, acessibilidade,
    responsividade, `prefers-reduced-motion`. Rodar `npm install` e validar
    `next build` sem erros.
-2. **dev-docs** — gerar `README.md` (rodar local, deploy Vercel, estrutura,
+2. **dev-docs**, gerar `README.md` (rodar local, deploy Vercel, estrutura,
    pendências: currículo PDF).
-3. **dev-sec** — revisão rápida: sem segredos hardcoded, `rel="noopener
+3. **dev-sec**, revisão rápida: sem segredos hardcoded, `rel="noopener
    noreferrer"` em links externos, sem PII sensível exposta (telefone ausente
    por decisão, não vazar nada do brief além do que foi pedido).
 
-## Dados de origem (fonte de verdade — não alterar fatos)
+## Dados de origem (fonte de verdade, não alterar fatos)
 Ver arquivo bruto do brief. Resumo estruturado passado ao dev-code no prompt
 de delegação: identidade, posicionamento ("prova, não promessa"), experiência
 (7 itens), formação/certificações, skills agrupadas, projetos (6 featured + 2
@@ -40,32 +40,32 @@ secundários) com status e cores (`no ar`=verde, `on-chain`=âmbar, `código`=az
 - Revisão de segurança sem achados críticos pendentes.
 
 ## Status
-- [x] dev-code — projeto Next.js 16 gerado, build validado sem erros
-- [x] dev-docs — README.md definitivo escrito
-- [x] dev-sec — auditoria concluída, 1 ajuste menor aplicado (headers), 0 vulnerabilidades no npm audit
-- [x] Consolidação final pelo ARCH (v1 — identidade visual própria)
+- [x] dev-code, projeto Next.js 16 gerado, build validado sem erros
+- [x] dev-docs, README.md definitivo escrito
+- [x] dev-sec, auditoria concluída, 1 ajuste menor aplicado (headers), 0 vulnerabilidades no npm audit
+- [x] Consolidação final pelo ARCH (v1, identidade visual própria)
 
 ## Pivô solicitado pelo usuário (correção mid-turn)
 Usuário rejeitou a v1 ("voce fez errado") e pediu explicitamente: mesmo
 layout, mesmas regras, mesmas cores, **mesma animação**, "tudo igual, uma
-cópia, porém com minhas informações" — referência: projeto React clonado em
+cópia, porém com minhas informações", referência: projeto React clonado em
 `C:\Users\Thales\Desktop\Porti\sureshmurali.github.io` (Suresh Murali,
 código MIT, GSAP + styled-components + react-responsive, scroll-jacking
 parallax).
 
 ### Investigação da referência (feita pelo ARCH antes de delegar)
-- Licença: MIT no código (`README.md` da referência) — copiar a lógica/CSS é
+- Licença: MIT no código (`README.md` da referência), copiar a lógica/CSS é
   permitido.
 - Fontes usadas (`src/Assets/index.css`, `src/Assets/Fonts/`): Avenir
-  (Light/Roman/Book/Medium/Heavy) e Valencia — **fontes comerciais
+  (Light/Roman/Book/Medium/Heavy) e Valencia, **fontes comerciais
   embutidas como arquivo .ttf, não cobertas pela licença MIT do código**.
   Decisão: substituir por fontes livres do Google Fonts com personalidade
-  equivalente — **Poppins** (família de pesos ampla, geométrica, no lugar de
+  equivalente, **Poppins** (família de pesos ampla, geométrica, no lugar de
   Avenir) e **Playfair Display** (serifada de destaque, no lugar de Valencia
   para o nome no Hero). Registrar essa substituição como decisão de
   licenciamento, não corte de escopo.
 - Imagens de projeto (`src/Assets/Images/{Tesla,Lashic,FastRetailing,...}`):
-  são capturas de telas de trabalhos de cliente do Suresh — não pertencem a
+  são capturas de telas de trabalhos de cliente do Suresh, não pertencem a
   Thales e não fazem sentido nos projetos dele (que não têm mockups visuais,
   são projetos de código/Web3). Decisão: manter o MESMO mecanismo de
   parallax/scroll-jacking do Work slide, mas o painel de imagem vira um
@@ -93,7 +93,7 @@ parallax).
   - Breakpoints exatos: mobileS 320 / mobileM 375 / mobileL 425 / tablet 768
     / laptop 1024 / laptopL 1440 / desktop 2560. Corte desktop/mobile do
     layout inteiro em 1224px (`react-responsive`, `useMediaQuery`).
-  - Work slide: scroll-jacking — painel de texto fixo à esquerda (50%
+  - Work slide: scroll-jacking, painel de texto fixo à esquerda (50%
     largura) com número/nome/descrição/papéis/tipo, muda conforme
     `Math.floor(scrollTop / slideHeight)`; painel direito com "imagens"
     (aqui: cor sólida por status) em parallax vertical.
@@ -106,18 +106,18 @@ parallax).
 1. Hero (NameAndJobTitle: "Thales Fortes" em reveal + headline) + AboutMe
    (marca d'água "SOBRE" + resumo/posicionamento, incluindo a tagline
    "prova, não promessa").
-2. Projetos — reaproveita o padrão Work (scroll-jacking): número, nome,
+2. Projetos, reaproveita o padrão Work (scroll-jacking): número, nome,
    descrição, status (era "ProjectType") com a cor da badge, links reais
    (era "roles", agora GitHub/Demo/Etherscan clicáveis com
    `rel="noopener noreferrer"`), painel direito com bloco de cor sólida por
    status em vez de screenshot.
-3. Experiência — reaproveita o padrão Skills (marca d'água + lista em duas
+3. Experiência, reaproveita o padrão Skills (marca d'água + lista em duas
    colunas): empresa · cargo · período.
-4. Formação — mesmo padrão reaproveitado: curso · instituição · período.
-5. Skills — padrão original, cores/grupos reais do brief, com destaque para
+4. Formação, mesmo padrão reaproveitado: curso · instituição · período.
+5. Skills, padrão original, cores/grupos reais do brief, com destaque para
    IA/Agentes de IA/n8n.
-6. Contato — padrão Contact (marca d'água "CONTATO" + grade de ícones):
-   e-mail, GitHub, LinkedIn, e um tile "Currículo (em breve)" — sem
+6. Contato, padrão Contact (marca d'água "CONTATO" + grade de ícones):
+   e-mail, GitHub, LinkedIn, e um tile "Currículo (em breve)", sem
    telefone.
 
 ### Requisitos que NÃO mudam (continuam valendo do brief original)
@@ -126,7 +126,7 @@ parallax).
   com `rel="noopener noreferrer"`.
 - SEO (metadata + OG), sem telefone, currículo como placeholder "em breve".
 - `prefers-reduced-motion`: desativar/simplificar scroll-jacking, parallax e
-  reveals (mostrar estado final estático) — requisito de acessibilidade do
+  reveals (mostrar estado final estático), requisito de acessibilidade do
   brief original, mantido mesmo pedindo cópia fiel da animação.
 - Stack Next.js + TypeScript + Tailwind (Tailwind mantido para layout base;
   `styled-components` + `gsap` + `react-responsive` adicionados como novas
@@ -134,20 +134,20 @@ parallax).
 - Build (`next build`) sem erros ao final.
 
 ## Status do pivô
-- [x] dev-code — layout/animações reescritos (GSAP + Tailwind, réplica fiel
+- [x] dev-code, layout/animações reescritos (GSAP + Tailwind, réplica fiel
       da referência com conteúdo do Thales), build validado
-- [x] dev-sec — 0 vulnerabilidades, headers/links/segredos ok, npm audit limpo
+- [x] dev-sec, 0 vulnerabilidades, headers/links/segredos ok, npm audit limpo
 - [x] Consolidação final pelo ARCH (v2)
 
 ## Bugfix: nome só aparecia após rolar a tela
 Usuário reportou que a animação do nome no Hero não disparava sozinha no
-carregamento — só ficava visível depois de rolar a página. Investigado com
+carregamento, só ficava visível depois de rolar a página. Investigado com
 Playwright (screenshots reais em t=0/1/2/4/6s, sem scroll, desktop e mobile,
 dev e produção).
 
 **Causa raiz confirmada (mobile):** `components/mobile/MobileHero.tsx`
 escondia o estado inicial via `gsap.set()` dentro do `useEffect`, sem
-nenhuma classe CSS correspondente — resultado: no HTML de SSR/primeiro
+nenhuma classe CSS correspondente, resultado: no HTML de SSR/primeiro
 paint, nome/título/tagline apareciam já 100% visíveis (flash), e só
 "desapareciam" depois que o JS rodava. Corrigido: estado inicial agora vem
 de classes Tailwind condicionadas a `reducedMotion` (mesmo padrão usado em
@@ -156,7 +156,7 @@ de classes Tailwind condicionadas a `reducedMotion` (mesmo padrão usado em
 **Hardening preventivo (desktop):** `lib/useRevealAnimation.ts` trocou
 `setTimeout` bruto por `delay` nativo do GSAP (`gsap.timeline({ delay:
 timeDelay/1000 })`), eliminando uma fonte plausível de timer competindo com
-o commit/paint do React — não confirmado como causa isolada nos testes, mas
+o commit/paint do React, não confirmado como causa isolada nos testes, mas
 mais robusto.
 
 Build (`next build`) validado novamente após a correção. Playwright ficou
@@ -173,13 +173,13 @@ original". Duas causas:
    tagline como dois efeitos INDEPENDENTES e paralelos. Corrigido: dois
    `useEffect` separados, tagline com seu próprio delay.
 2. **Cópia fiel do desktop era, de fato, lenta por design** (~4.8s até o
-   bloco branco sumir de vez — confirmado 1:1 com os números do
+   bloco branco sumir de vez, confirmado 1:1 com os números do
    `NameReveal.js`/`TitleReveal.js` originais: delay 500/1300ms, pausa de 2s
    antes do fade do bloco). Isso é uma escolha cinematográfica do portfólio
    de referência (site de designer), inadequada pra um portfólio de
    recrutamento. Decisão: manter o MESMO mecanismo visual (slide-up +
    easing + bloco branco cobrindo/revelando), só encurtando os tempos
-   mortos — `timeDelay` 500/1300ms → 150/450ms, pausa antes do fade do
+   mortos, `timeDelay` 500/1300ms → 150/450ms, pausa antes do fade do
    bloco 2s → 0.4s; tagline mobile delay 1.5s → 0.5s.
 
 Medido de verdade com Playwright (não só teoricamente): reveal completo do

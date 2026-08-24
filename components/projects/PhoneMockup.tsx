@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 /**
- * Moldura de celular estilo iPhone (bezel + notch), em CSS puro — sem
+ * Moldura de celular estilo iPhone (bezel + notch), em CSS puro, sem
  * asset externo. A tela mostra o screenshot real do projeto.
  *
  * Altura sempre `80vh` (igual ao código-fonte de referência, que usa esse
- * valor fixo pras 4 imagens de cada projeto — sem variar por breakpoint);
+ * valor fixo pras 4 imagens de cada projeto, sem variar por breakpoint);
  * o tamanho aparente de cada celular vem de `scale`, exatamente como lá
  * (`transform: scale(0.9)`, `scale(0.7)` etc.).
  *
  * `scale`/`rotate` ficam num wrapper interno separado do elemento que
- * recebe `ref`/`style` — esse é reservado pra animação de entrada
+ * recebe `ref`/`style`, esse é reservado pra animação de entrada
  * (`translateY` via GSAP), senão os dois `transform` colidiriam.
  */
 export default function PhoneMockup({

@@ -5,7 +5,7 @@ import { skillPairings } from "@/lib/data";
  * Duas colunas pareadas por linha: esquerda = skills/ferramentas usadas,
  * direita = a responsabilidade real (do brief) onde elas foram aplicadas.
  * Layout simplificado a pedido do Thales, inspirado na seção "SKIL" de
- * referência (duas colunas soltas) — aqui cada linha liga skill ↔ papel.
+ * referência (duas colunas soltas), aqui cada linha liga skill ↔ papel.
  */
 export default function SkillsSection() {
   return (

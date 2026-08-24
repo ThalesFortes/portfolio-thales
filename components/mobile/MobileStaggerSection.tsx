@@ -17,7 +17,7 @@ type Props = {
  * (no watermark/parallax on mobile, per the brief) + stagger fade-in for
  * the items below. Deviation from the original: the reveal is triggered
  * by `IntersectionObserver` instead of firing on mount, since this is a
- * long single page where every section mounts immediately — animating on
+ * long single page where every section mounts immediately, animating on
  * mount would fire the whole stagger before the user has scrolled anywhere
  * near it.
  */

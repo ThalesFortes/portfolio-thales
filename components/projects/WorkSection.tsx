@@ -10,7 +10,7 @@ import ProjectMedia from "./ProjectMedia";
 import ProjectsList from "./ProjectsList";
 
 // Só os projetos com screenshot entram no painel visual com scroll-jacking
-// — os demais (Protocolo Web3, Sistema de Compra, DelvyID) vivem na seção
+//, os demais (Protocolo Web3, Sistema de Compra, DelvyID) vivem na seção
 // "Outros projetos" (texto puro), ver OtherProjectsSection.
 const mediaProjects = projects.filter((project) => project.images && project.images.length > 0);
 
@@ -18,7 +18,7 @@ function buildSlides(): WorkSlide[] {
   // Sem slides vazios no início nem no fim: o primeiro projeto já aparece
   // assim que a seção entra na tela, e o release do scroll-jacking (ver
   // `RELEASE_BUFFER_VH` abaixo) acontece assim que o dwell do último
-  // projeto termina — sem tela em branco de respiro no meio do caminho.
+  // projeto termina, sem tela em branco de respiro no meio do caminho.
   return mediaProjects.map<WorkSlide>((project, index) => ({
     number: String(index + 1).padStart(2, "0"),
     name: project.name,
@@ -31,14 +31,14 @@ function buildSlides(): WorkSlide[] {
 const slides = buildSlides();
 
 // Extra além de `slides.length * slideHeight` só pra dar ao ÚLTIMO projeto o
-// mesmo dwell (tempo pinado) dos outros antes do painel "descolar" — sem
+// mesmo dwell (tempo pinado) dos outros antes do painel "descolar", sem
 // isso ele ficaria com menos tempo de tela por causa da própria altura do
 // painel (100vh). Não é um slide indexado, então não mostra nada em branco.
 const RELEASE_BUFFER_VH = 100;
 
 /**
  * Port of `Work.js`: scroll-jacked project panel. Text panel switches
- * project on `Math.floor(relativeScrollTop / slideHeight)` — computed
+ * project on `Math.floor(relativeScrollTop / slideHeight)`, computed
  * relative to this section's own offset (not `document.documentElement
  * .scrollTop` like the original) because our page has Hero/About before
  * Projetos, so the global scrollTop is never near zero when this section
@@ -58,7 +58,7 @@ export default function WorkSection() {
     const relative = Math.max(0, window.scrollY - containerTop);
     // Soma o lead (`TEXT_SWITCH_LEAD_VH`) antes de calcular o índice, pra
     // trocar o texto exatamente quando a imagem do próximo projeto começa
-    // a entrar pelo rodapé da tela em `ProjectMedia` — não ~100vh depois.
+    // a entrar pelo rodapé da tela em `ProjectMedia`, não ~100vh depois.
     const textSwitchLead = window.innerHeight * TEXT_SWITCH_LEAD_VH;
     const adjusted = relative + textSwitchLead;
     const newIndex = Math.min(Math.floor(adjusted / slideHeight), slides.length - 1);

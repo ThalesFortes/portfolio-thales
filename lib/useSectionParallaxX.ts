@@ -13,7 +13,7 @@ import { useIsDesktop } from "./useIsDesktop";
  * (`scrollTop / (scrollHeight - clientHeight)`) with hardcoded min/max vh
  * limits tuned to that specific page's total height. Our page has a
  * different number/length of sections, so those hardcoded limits would be
- * meaningless here — instead we derive an equivalent 0..1 progress value
+ * meaningless here, instead we derive an equivalent 0..1 progress value
  * from how far the *section itself* has travelled through the viewport
  * (its own `getBoundingClientRect()`), which reproduces the same visual
  * effect (title drifts horizontally while its section is on screen)

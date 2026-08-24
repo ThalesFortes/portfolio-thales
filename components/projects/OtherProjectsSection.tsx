@@ -4,7 +4,7 @@ import { projects } from "@/lib/data";
 
 // Projetos sem screenshot (Protocolo Web3, Sistema de Compra, DelvyID):
 // seção separada, texto puro, mesmo padrão visual (watermark) da seção de
-// Skills — sem scroll-jacking, sem painel de imagem.
+// Skills, sem scroll-jacking, sem painel de imagem.
 const mediaProjects = projects.filter((project) => project.images && project.images.length > 0);
 const otherProjects = projects.filter((project) => !project.images || project.images.length === 0);
 

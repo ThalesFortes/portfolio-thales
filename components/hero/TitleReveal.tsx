@@ -4,7 +4,7 @@ import { useFadeReveal } from "@/lib/useFadeReveal";
 import { NAME_FADE_DURATION_MS } from "./NameReveal";
 
 /** Mesma animação de fade do nome (ver `NameReveal`), só que atrasada até
- * o fade dele terminar por completo — `timeDelay` já vem pronto do Hero. */
+ * o fade dele terminar por completo, `timeDelay` já vem pronto do Hero. */
 export default function TitleReveal({
   text,
   timeDelay,

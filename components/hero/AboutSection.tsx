@@ -8,7 +8,7 @@ import { useSectionParallaxX } from "@/lib/useSectionParallaxX";
  * Port of `AboutMe.js`: uma frase só, no mesmo tom do original ("Crafting
  * user friendly... it's my passion."). A versão anterior tratava "prova,
  * não promessa" como um slogan solto seguido de um parágrafo de bio embaixo
- * — não é assim que a referência faz; aqui vira uma frase natural única.
+ *, não é assim que a referência faz; aqui vira uma frase natural única.
  */
 export default function AboutSection() {
   const sectionRef = useRef<HTMLElement | null>(null);

@@ -8,7 +8,7 @@ import { projects } from "@/lib/data";
  * scroll-jacking, so this is a stacked list with the same stagger
  * fade-in as the other mobile sections instead.
  *
- * "Protocolo Web3" vai pro fim da lista aqui (só no mobile) — no desktop
+ * "Protocolo Web3" vai pro fim da lista aqui (só no mobile), no desktop
  * ele já cai em "Outros projetos", numa seção separada, então não precisa
  * do mesmo ajuste lá.
  */

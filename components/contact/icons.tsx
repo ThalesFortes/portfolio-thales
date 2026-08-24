@@ -1,4 +1,4 @@
-// Ícones autorais simples (line-icon), desenhados do zero — os SVGs de
+// Ícones autorais simples (line-icon), desenhados do zero, os SVGs de
 // marca do projeto de referência (git.svg, linkedin.svg, mail.svg...) não
 // são reutilizados aqui.
 type IconProps = { className?: string };

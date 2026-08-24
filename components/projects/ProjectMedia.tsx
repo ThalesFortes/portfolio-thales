@@ -10,7 +10,7 @@ import PhoneMockup from "./PhoneMockup";
 
 // Réplica do padrão real do código-fonte de referência (`WhatsMyFoodImages.js`
 // etc.): TODA imagem tem a mesma altura-base (80vh, sem variar por
-// breakpoint) — o que diferencia o tamanho de uma pra outra é um `scale()`
+// breakpoint), o que diferencia o tamanho de uma pra outra é um `scale()`
 // por cima (lá: 1 / 0.9 / 0.7 / 0.6), não uma altura diferente.
 const PHONE_CONFIG = [
   { position: "top-[2%] left-[4%]", scale: 1, rotate: -6 },
@@ -70,7 +70,7 @@ function ProjectPhones({ project }: { project: Project }) {
  * projeto, em vez de um bloco/grade único. Cada celular sobe por conta
  * própria, em sequência, quando entra na tela (`IntersectionObserver`).
  * O grupo inteiro ainda desliza em `translateY` conforme o slide do
- * projeto passa pela tela — mesmo mecanismo de parallax de antes.
+ * projeto passa pela tela, mesmo mecanismo de parallax de antes.
  */
 export default function ProjectMedia({
   containerRef,

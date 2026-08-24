@@ -1,7 +1,7 @@
-# Portfólio — Thales de Abreu Fortes da Silva
+# Portfólio, Thales de Abreu Fortes da Silva
 
 Portfólio pessoal de Thales de Abreu Fortes da Silva. Posicionamento do site:
-**prova, não promessa** — cada projeto listado tem status verificável (no ar,
+**prova, não promessa**, cada projeto listado tem status verificável (no ar,
 on-chain, código aberto, NDA/interno) e links reais (demo, repositório,
 explorador de blockchain), sem alegações não conferíveis.
 
@@ -25,7 +25,7 @@ public/              Assets estáticos (og-image.svg, ícone, etc.)
 ```
 
 Toda a informação de conteúdo (textos, experiências, projetos, links) fica
-centralizada em `lib/data.ts` — para atualizar o site, edite esse arquivo em
+centralizada em `lib/data.ts`, para atualizar o site, edite esse arquivo em
 vez de mexer diretamente nos componentes.
 
 ## Como rodar localmente
@@ -61,7 +61,7 @@ O build foi validado com `npx next build` (Next 16.3.2) sem erros.
 1. Suba o repositório para o GitHub (ou GitLab/Bitbucket).
 2. Em [vercel.com](https://vercel.com/), clique em **Add New → Project** e
    importe o repositório.
-3. O framework é detectado automaticamente como **Next.js** — não é
+3. O framework é detectado automaticamente como **Next.js**, não é
    necessário configurar build command nem output directory manualmente.
 4. Não há variáveis de ambiente obrigatórias no momento.
 5. Clique em **Deploy**. A partir daí, todo push na branch de produção gera
@@ -88,5 +88,5 @@ vercel --prod
 ## Licença e autoria
 
 Projeto pessoal de Thales de Abreu Fortes da Silva
-(thales_pro@outlook.com). Sem licença de uso público — código e conteúdo
+(thales_pro@outlook.com). Sem licença de uso público, código e conteúdo
 reservados ao autor.
