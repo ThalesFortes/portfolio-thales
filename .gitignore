@@ -1,0 +1,37 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# rascunhos de trabalho, fora de public/ — não fazem parte do site publicado
+/celular/
+/print/
+/curriculo/
+
+# relatórios locais (Lighthouse/PageSpeed etc.)
+*.report.html

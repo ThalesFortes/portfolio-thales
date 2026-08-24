@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0e14" />
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.15" />
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-width="1" />
+    </pattern>
+  </defs>
+  <text x="80" y="260" font-family="monospace" font-size="28" fill="#4dd6c4">Analista de Sistemas | Desenvolvimento de Software</text>
+  <text x="80" y="330" font-family="sans-serif" font-size="64" font-weight="700" fill="#e6edf3">Thales Fortes</text>
+  <text x="80" y="390" font-family="sans-serif" font-size="28" fill="#93a1b4">Desenvolvedor Full-Stack &amp; Web3</text>
+  <rect x="80" y="440" width="260" height="56" rx="28" fill="rgba(77,214,196,0.1)" stroke="#4dd6c4" />
+  <text x="110" y="476" font-family="monospace" font-size="24" fill="#4dd6c4">"prova, não promessa"</text>
+</svg>
