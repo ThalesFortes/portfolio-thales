@@ -22,8 +22,8 @@ export default function ContactMobile() {
             label="Currículo"
             href={identity.resumeHref}
             download="Thales de Abreu Fortes da Silva - Curriculo.pdf"
-          />*/}
-        </div>
+          />
+        </div>*/}
       </div>
     </MobileStaggerSection>
   );
