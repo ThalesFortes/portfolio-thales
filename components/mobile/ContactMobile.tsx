@@ -9,7 +9,6 @@ export default function ContactMobile() {
         <div data-reveal-item>
           <SocialLogo icon="mail" label="E-mail" href={`mailto:${identity.email}`} />
         </div>
-        {/*
         <div data-reveal-item>
           <SocialLogo icon="github" label="GitHub" href={identity.github} />
         </div>
@@ -23,7 +22,7 @@ export default function ContactMobile() {
             href={identity.resumeHref}
             download="Thales de Abreu Fortes da Silva - Curriculo.pdf"
           />
-        </div>*/}
+        </div>
       </div>
     </MobileStaggerSection>
   );
