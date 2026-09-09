@@ -15,14 +15,14 @@ export default function ContactSection() {
     >
       <div className="mx-[10%] flex flex-wrap gap-12 tablet:ml-[20%] tablet:mr-[6%] tablet:gap-20 laptop:gap-28">
         <SocialLogo icon="mail" label="E-mail" href={`mailto:${identity.email}`} />
-        {/*   <SocialLogo icon="github" label="GitHub" href={identity.github} />
+        <SocialLogo icon="github" label="GitHub" href={identity.github} />
         <SocialLogo icon="linkedin" label="LinkedIn" href={identity.linkedin} />
         <SocialLogo
           icon="resume"
           label="Currículo"
           href={identity.resumeHref}
           download="Thales de Abreu Fortes da Silva - Curriculo.pdf"
-        /> */}
+        /> 
       </div>
     </WatermarkSection>
   );
